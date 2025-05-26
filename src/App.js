@@ -7,6 +7,19 @@ import ReviewsTab from "./components/ReviewsTab";
 import StarRating from "./components/StarRating";
 import UgcGallery from "./components/UgcGallery";
 
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    if (typeof yotpoWidgetsContainer !== "undefined") {
+      yotpoWidgetsContainer.initWidgets();
+      console.log("loaded");
+    } else {
+      console.log("yotpoWidgetsContainer not found, no widgets to initialize");
+    }
+  }, 1000);
+});
+
+
 function App() {
   //Instance ID
   let InstanceId_Widget = "643327";
