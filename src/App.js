@@ -37,7 +37,7 @@ function App() {
 
   return (
     <>
-     <YotpoWidgetInit />
+
       <div className="wrapper">
         <div class="accordion" id="accordionExample">
           <Widget
@@ -130,6 +130,7 @@ function App() {
           />
         </div>
       </div>
+                   <YotpoWidgetInit />
     </>
   );
 }
