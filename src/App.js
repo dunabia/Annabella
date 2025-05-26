@@ -6,7 +6,7 @@ import SEO from "./components/SEO";
 import ReviewsTab from "./components/ReviewsTab";
 import StarRating from "./components/StarRating";
 import UgcGallery from "./components/UgcGallery";
-import YotpoWidgetInit from "./components/YotpoWidgetInit";
+
 
 
 
@@ -130,7 +130,7 @@ function App() {
           />
         </div>
       </div>
-                   <YotpoWidgetInit />
+                  
     </>
   );
 }
