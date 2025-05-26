@@ -46,7 +46,9 @@ function ReviewsCarousel(props) {
             <div
               className="yotpo-widget-instance"
               data-yotpo-instance-id={instanceid}
-              mode-preview={productid === "" ? "true" : ""}
+     {...(productid !== ""
+    ? { "data-yotpo-product-id": "" }
+    : { "data-mode-preview": "true" })}
              
             ></div>
           </div>
